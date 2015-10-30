@@ -1,0 +1,8 @@
+name: MoreCreativeItem
+main: mci\mci
+version: 1.0
+api: [1.10.0]
+load: POSTWORLD
+author: PMMP-JPN
+authors: [haniokasai]
+website: pmmp-jpn.github.io

@@ -7,3 +7,4 @@ Item::$list[1] = Stonex::class;<br>
 Item::addCreativeItem (new Item(1));
 <br><br>
 クリエイティブの時のアイテムが追加できる。
+アイテム追加はconfig.ymlに追記してください。

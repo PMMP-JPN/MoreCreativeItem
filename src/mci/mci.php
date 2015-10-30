@@ -10,7 +10,9 @@ use pocketmine\utils\Config;
 class mci extends PluginBase implements Listener{
 	public function onEnable(){
   	$this->getServer()->getPluginManager()->registerEvents($this,$this);
-	
+	if(!file_exists($this->getDataFolder())){
+			@mkdir($this->getDataFolder(), 0744, true);
+		}
 	if(!file_exists($this->getDataFolder() . "config.yml")){
 		$this->conf = new config($this->getDataFolder() . "config.yml", config::YAML, array(
 			"itemid(maybe you cant use metadata)"=> null,
